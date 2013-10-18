@@ -9,6 +9,8 @@
 <script type="text/javascript" charset="utf=8" src="js/jquery-1.7.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="js/SpeechRecognizer.js"></script>
 <script type="text/javascript" charset="utf=8" src="js/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/tts.js"></script>
+
 <style>
 #startrecognition, #searchField {
 	padding: 10px;
@@ -30,6 +32,7 @@ p {
 	width: 80%;
 }
 </style>
+
 </head>
 
 <body onload="init()">
@@ -40,7 +43,15 @@ p {
 <button id = "searchbutton"value = "Search" width="640" height="360">search</button>
 
 <button id = "supportlanguage" width="640" height="360">Get Supported Languages</button>
+
 <div id="results"></div>
+
+ <h2>TTS Example</h2>
+<!-- 	<input id="playMe" type="text"/><br/>
+	<select id="langs" onchange="changeLang()"></select>
+
+    <button onclick="speak();">Speak</button> <br/> -->
+
 
 </body>
 </html>

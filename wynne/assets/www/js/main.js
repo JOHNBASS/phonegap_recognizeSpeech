@@ -2,11 +2,24 @@ var appid = "5252D701A7CE4B4F3C190F1403D2181F2C330F2E";
 
 function init() {
 	document.addEventListener("deviceready", deviceready, true);
+
 }
 
 function deviceready() {
 	console.log('loaded');
-	
+
+window.plugins.tts.startup(doSpeak, errHandler);
+
+function doSpeak() {
+   window.plugins.tts.speak("The TTS service is ready", {} , errHandler);
+}
+
+function errHandler(result){
+    alert('Error: ' + result);
+}
+
+
+///////////////////////////////////////////////////////////////////////////
 	window.plugins.speechrecognizer.init(speechInitOk, speechInitFail);
 	
 	function speechInitOk() {

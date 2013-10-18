@@ -17,4 +17,5 @@
     <plugin name="FileTransfer" value="com.phonegap.FileTransfer"/>
     <plugin name="Capture" value="com.phonegap.Capture"/>
 	<plugin name="SpeechRecognizer" value="com.example.SpeechRecognizer"/>
+	<plugin name="TTS" value="com.phonegap.plugins.speech.TTS"/>
 </plugins>
